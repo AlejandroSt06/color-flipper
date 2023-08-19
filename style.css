@@ -56,6 +56,7 @@ main {
     justify-content: center;
     align-items: center;
     z-index: -1;
+ 
     
 }
 
@@ -108,13 +109,24 @@ footer div{
     align-items: center;
     gap: 5%;
 }
-@media  screen and (max-width:500px) {
-    .container div{
-
+@media  screen and (max-width:900px) {
+    .container div.color-code{
+        background-color: var(--main-color);
+        color: var(--tertiary-color);
+        padding: 10px 10px 15px 10px;
+        min-width: 100px;
+        max-width: 300px;
         flex-direction: column;
-        height: 100px;
-        min-width: 280px;
-    } 
+        border-radius: 10px;
+        height: 140px;
+        margin: 30px auto
+        ;
+        text-align: center;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 0%;
+    }
 }
 .container span{
     text-align: center;
